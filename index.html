@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,85 +13,86 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('images/background.jpg') repeat; /* Ensure file path is correct */
-            background-size: 256px 256px; /* Larger tiles for background */
-            animation: scrollBackground 40s linear infinite; /* Smooth scrolling background */
+            background: url('images/background.jpg') repeat;
+            background-size: 256px 256px;
+            animation: scrollBackground 40s linear infinite;
             font-family: 'Lucida Console', Monaco, monospace;
             color: cyan;
-            height: 100%; /* Ensures body fills the viewport */
-            display: flex; /* Enables flexbox for centering */
-            justify-content: center;/* Centers table horizontally */
+            height: 100vh; /* Ensure body fills the viewport */
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Centers table horizontally */
             align-items: center; /* Centers table vertically */
-        }table {
-        width: 80%; /* Table takes up 80% of the screen width */
-        height: 80vh; /* Table takes up 80% of the screen height */
-        margin: 0px; /* Centers the table on the screen */
-        border-collapse: collapse;
-    }
-
-    td {
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    /* Logo Styling */
-    #logo {
-        height: auto;
-        background-color: black;
-        animation: slideDownFadeIn 2s ease-out; /* Slide down and fade in animation */
-    }
-
-    #logo img {
-        width: 100%; /* Matches splash image width */
-        display: block;
-    }
-
-    /* Main Image Styling */
-    #main-image {
-        width: 100%; /* Matches logo width */
-        display: block;
-    }
-
-    /* Bottom Cell Styling */
-    #text {
-        background-color: black; /* Black background for text */
-        padding: 20px;
-        font-size: 1.2em;
-    }
-
-    /* Link Colors */
-    a {
-        color: #FFFF00; /* Neon yellow for unvisited links */
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: #FF4500; /* Neon orange for visited links */
-    }
-
-    /* Background Scroll Animation */
-    @keyframes scrollBackground {
-        0% {
-            background-position: 0 0;
         }
-        100% {
-            background-position: 0 -256px; /* Adjust for scrolling effect */
-        }
-    }
 
-    /* Logo Slide Down & Fade In Animation */
-    @keyframes slideDownFadeIn {
-        0% {
-            transform: translateY(-50px);
-            opacity: 0;
+        table {
+            width: 80%; /* Table takes up 80% of the screen width */
+            height: 80vh; /* Table takes up 80% of the screen height */
+            margin: 0; /* Remove default margin */
+            border-collapse: collapse;
         }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-</style>
 
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* Logo Styling */
+        #logo {
+            height: auto;
+            background-color: black;
+            animation: slideDownFadeIn 2s ease-out;
+        }
+
+        #logo img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Main Image Styling */
+        #main-image {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bottom Cell Styling */
+        #text {
+            background-color: black;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        /* Link Colors */
+        a {
+            color: #FFFF00; /* Neon yellow for unvisited links */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #FF4500; /* Neon orange for visited links */
+        }
+
+        /* Background Scroll Animation */
+        @keyframes scrollBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 -256px;
+            }
+        }
+
+        /* Logo Slide Down & Fade In Animation */
+        @keyframes slideDownFadeIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <table>
