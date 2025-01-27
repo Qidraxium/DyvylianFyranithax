@@ -13,16 +13,17 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('images/bg.jpg') repeat;
-            background-size: 512px 512px; /* Larger tiling for background */
-            animation: scrollBackground 20s linear infinite; /* Background scroll effect */
+            background: url('images/bg.jpg') repeat; /* Ensure file path is correct */
+            background-size: 512px 512px; /* Larger tiles for background */
+            animation: scrollBackground 20s linear infinite; /* Smooth scrolling background */
             font-family: 'Lucida Console', Monaco, monospace;
             color: cyan;
+            height: 100%; /* Ensures body fills the viewport */
         }
 
         table {
-            width: 80%; /* Table now takes up 80% of the screen */
-            height: 80vh; /* Adjusted height to match the smaller table */
+            width: 80%; /* Table takes up 80% of the screen width */
+            height: 80vh; /* Table takes up 80% of the screen height */
             margin: auto; /* Centers the table on the screen */
             border-collapse: collapse;
         }
@@ -36,24 +37,23 @@
         #logo {
             height: auto;
             background-color: black;
-            padding: 0;
             animation: slideDownFadeIn 2s ease-out; /* Slide down and fade in animation */
         }
 
         #logo img {
-            width: 100%; /* Same width as the splash image */
+            width: 100%; /* Matches splash image width */
             display: block;
         }
 
         /* Main Image Styling */
         #main-image {
-            width: 100%; /* Same width as the logo */
+            width: 100%; /* Matches logo width */
             display: block;
         }
 
         /* Bottom Cell Styling */
         #text {
-            background-color: black; /* Fully black background */
+            background-color: black; /* Black background for text */
             padding: 20px;
             font-size: 1.2em;
         }
@@ -74,7 +74,7 @@
                 background-position: 0 0;
             }
             100% {
-                background-position: 0 -100%;
+                background-position: 0 -512px; /* Adjust for scrolling effect */
             }
         }
 
