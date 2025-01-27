@@ -56,26 +56,40 @@
             display: block;
         }
 
-        /* Link Button Row Styling */
+        /* Button Table Row Styling */
         #buttons {
-            background-color: black; /* Black row background */
+            background-color: black;
+            height: 50px; /* Row height */
         }
 
         #buttons td {
-            width: 25%; /* 4 equal columns */
-            background-color: #333333; /* Dark gray */
-            color: white;
-            font-size: 0.9em;
-            padding: 10px;
-            border: 2px solid black; /* Black border between buttons */
+            padding: 0;
         }
 
-        #buttons td:hover {
+        /* Button Styling */
+        .link-button {
+            width: 25%; /* 4 equal columns */
+            height: 50px;
+            background-color: #333333; /* Dark gray */
+            color: white;
+            font-size: 0.8em; /* Smaller text */
+            text-decoration: none; /* Remove underline */
+            display: block;
+            line-height: 50px; /* Center text vertically */
+            border: 2px solid black; /* Black border */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .link-button:hover {
             background-color: #555555; /* Slightly lighter gray on hover */
             cursor: pointer;
         }
 
         /* Splash Image Styling */
+        #splash {
+            height: auto;
+        }
+
         #main-image {
             width: 100%;
             display: block;
@@ -90,16 +104,6 @@
 
         h1 {
             font-size: 1.5em; /* Smaller "Welcome" text */
-        }
-
-        /* Link Colors */
-        a {
-            color: #FFFF00;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #FF4500;
         }
 
         /* Background Scroll Animation */
@@ -127,22 +131,35 @@
 </head>
 <body>
     <table>
+        <!-- Logo Row -->
         <tr>
             <td id="logo">
                 <img src="images/logo.jpg" alt="Logo">
             </td>
         </tr>
+
+        <!-- Button Row with Nested Table -->
         <tr id="buttons">
-            <td><a href="index.html" style="color: white; text-decoration: none;">Home</a></td>
-            <td><a href="index.html" style="color: white; text-decoration: none;">Bird</a></td>
-            <td><a href="index.html" style="color: white; text-decoration: none;">Computer</a></td>
-            <td><a href="index.html" style="color: white; text-decoration: none;">Winning</a></td>
+            <td>
+                <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td><a href="index.html" class="link-button">Home</a></td>
+                        <td><a href="index.html" class="link-button">Bird</a></td>
+                        <td><a href="index.html" class="link-button">Computer</a></td>
+                        <td><a href="index.html" class="link-button">Winning</a></td>
+                    </tr>
+                </table>
+            </td>
         </tr>
+
+        <!-- Splash Image Row -->
         <tr>
             <td id="splash">
                 <img id="main-image" src="images/splash.png" alt="Main Image">
             </td>
         </tr>
+
+        <!-- Text Row -->
         <tr>
             <td id="text">
                 <h1>Welcome</h1>
