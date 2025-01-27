@@ -56,18 +56,22 @@
             display: block;
         }
 
-        /* Link Button Row */
+        /* Link Button Row Styling */
+        #buttons {
+            background-color: black; /* Black row background */
+        }
+
         #buttons td {
             width: 25%; /* 4 equal columns */
-            padding: 10px;
-            background-color: gray;
-            border: 2px solid black;
-            font-size: 0.9em;
+            background-color: #333333; /* Dark gray */
             color: white;
+            font-size: 0.9em;
+            padding: 10px;
+            border: 2px solid black; /* Black border between buttons */
         }
 
         #buttons td:hover {
-            background-color: #333333; /* Darker gray on hover */
+            background-color: #555555; /* Slightly lighter gray on hover */
             cursor: pointer;
         }
 
@@ -81,7 +85,7 @@
         #text {
             background-color: black;
             padding: 20px;
-            font-size: 1em; /* Smaller text for the bottom section */
+            font-size: 1em;
         }
 
         h1 {
@@ -129,10 +133,10 @@
             </td>
         </tr>
         <tr id="buttons">
-            <td>Home</td>
-            <td>About</td>
-            <td>Portfolio</td>
-            <td>Contact</td>
+            <td><a href="index.html" style="color: white; text-decoration: none;">Home</a></td>
+            <td><a href="index.html" style="color: white; text-decoration: none;">Bird</a></td>
+            <td><a href="index.html" style="color: white; text-decoration: none;">Computer</a></td>
+            <td><a href="index.html" style="color: white; text-decoration: none;">Winning</a></td>
         </tr>
         <tr>
             <td id="splash">
