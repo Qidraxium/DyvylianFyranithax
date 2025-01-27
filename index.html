@@ -9,10 +9,11 @@
     <meta name="google-site-verification" content="7Xq4Lm12FyN9K">
     <title>Reference: 7Xq4Lm12FyN9K</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
             padding: 0;
-            background: url('images/background.jpg') no-repeat center center fixed;
+            background: url('images/bg.jpg') no-repeat center center fixed;
             background-size: cover;
             background-color: #333333; /* Fallback color */
             font-family: 'Lucida Console', Monaco, monospace;
@@ -27,16 +28,56 @@
             text-align: center;
             vertical-align: middle;
         }
+
+        /* Logo Animation */
         #logo img {
             height: 100px;
+            animation: fadeIn 2s ease-in-out forwards;
         }
+
+        /* Main Image Animation */
         #main-image {
             width: 80vmin;
             height: 80vmin;
+            animation: pulse 3s infinite alternate ease-in-out;
         }
-        #text {
-            padding: 20px;
-            font-size: 1.2em;
+
+        /* Text Animation */
+        #text h1 {
+            animation: slideDown 2s ease-out forwards;
+            opacity: 0;
+        }
+        #text p {
+            animation: fadeIn 3s 1s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
         }
     </style>
 </head>
@@ -58,4 +99,9 @@
                 <p>
                     Reference ID: <strong>7Xq4Lm12FyN9K</strong><br><br>
                     Click <a href="https://docs.google.com/document/d/1SggdpPOtm4G6-BuHxZljNeq6tNGeZK6NMwp5taqelR0/edit?usp=drivesdk" target="_blank">here</a>
-                </p
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
