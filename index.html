@@ -9,34 +9,70 @@
     <meta name="google-site-verification" content="7Xq4Lm12FyN9K">
     <title>Reference: 7Xq4Lm12FyN9K</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
             padding: 0;
-            background: url('images/background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            background-color: #333333; /* Fallback color */
+            background: url('images/background.jpg') repeat;
+            background-size: 128px 128px; /* Tile size for background */
+            animation: scrollBackground 20s linear infinite; /* Background scroll effect */
             font-family: 'Lucida Console', Monaco, monospace;
-            color: white;
+            color: cyan;
         }
+
         table {
             width: 100%;
             height: 100vh;
             border-collapse: collapse;
         }
+
         td {
             text-align: center;
             vertical-align: middle;
         }
+
+        /* Logo and Splash Styling */
+        #logo {
+            height: auto;
+            background-color: black;
+            padding: 0;
+        }
+
         #logo img {
-            height: 100px;
+            width: 100%; /* Same width as the splash image */
+            display: block;
         }
+
         #main-image {
-            width: 80vmin;
-            height: 80vmin;
+            width: 100%; /* Same width as the logo */
+            display: block;
         }
+
+        /* Bottom Cell Styling */
         #text {
+            background-color: black; /* Fully black background */
             padding: 20px;
             font-size: 1.2em;
+        }
+
+        /* Link Colors */
+        a {
+            color: #FFFF00; /* Neon yellow for unvisited links */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #FF4500; /* Neon orange for visited links */
+        }
+
+        /* Background Scroll Animation */
+        @keyframes scrollBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 -100%;
+            }
         }
     </style>
 </head>
