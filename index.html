@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,84 +18,76 @@
             font-family: 'Lucida Console', Monaco, monospace;
             color: cyan;
             height: 100%; /* Ensures body fills the viewport */
-        }
+        }table {
+        width: 80%; /* Table takes up 80% of the screen width */
+        height: 80vh; /* Table takes up 80% of the screen height */
+        margin: 0px; /* Centers the table on the screen */
+        border-collapse: collapse;
+    }
 
-        table {
-            width: 80%; /* Table takes up 80% of the screen width */
-            height: 80vh; /* Table takes up 80% of the screen height */
-            margin: auto; /* Centers the table on the screen */
-            border-collapse: collapse;
-            padding: 0; /* No padding */
-            margin: 0; /* No margin */
-        }
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
 
-        td {
-            text-align: center;
-            vertical-align: middle;
-        }
+    /* Logo Styling */
+    #logo {
+        height: auto;
+        background-color: black;
+        animation: slideDownFadeIn 2s ease-out; /* Slide down and fade in animation */
+    }
 
-        /* Logo Styling */
-        #logo {
-            height: auto;
-            background-color: black;
-            animation: slideDownFadeIn 2s ease-out; /* Slide down and fade in animation */
-        }
+    #logo img {
+        width: 100%; /* Matches splash image width */
+        display: block;
+    }
 
-        #logo img {
-            width: 100%; /* Matches splash image width */
-            display: block;
-        }
+    /* Main Image Styling */
+    #main-image {
+        width: 100%; /* Matches logo width */
+        display: block;
+    }
 
-        /* Splash Cell Styling */
-        #splash {
-            border: 4px solid #FF4500; /* Neon orange border */
-        }
+    /* Bottom Cell Styling */
+    #text {
+        background-color: black; /* Black background for text */
+        padding: 20px;
+        font-size: 1.2em;
+    }
 
-        #main-image {
-            width: 100%; /* Matches logo width */
-            display: block;
-        }
+    /* Link Colors */
+    a {
+        color: #FFFF00; /* Neon yellow for unvisited links */
+        text-decoration: none;
+    }
 
-        /* Bottom Cell Styling */
-        #text {
-            background-color: black; /* Black background for text */
-            padding: 20px;
-            font-size: 1.2em;
-            border: 4px solid #FF4500; /* Neon orange border */
-        }
+    a:visited {
+        color: #FF4500; /* Neon orange for visited links */
+    }
 
-        /* Link Colors */
-        a {
-            color: #FFFF00; /* Neon yellow for unvisited links */
-            text-decoration: none;
+    /* Background Scroll Animation */
+    @keyframes scrollBackground {
+        0% {
+            background-position: 0 0;
         }
+        100% {
+            background-position: 0 -256px; /* Adjust for scrolling effect */
+        }
+    }
 
-        a:visited {
-            color: #FF4500; /* Neon orange for visited links */
+    /* Logo Slide Down & Fade In Animation */
+    @keyframes slideDownFadeIn {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
         }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
 
-        /* Background Scroll Animation */
-        @keyframes scrollBackground {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 0 -512px; /* Adjust for scrolling effect */
-            }
-        }
-
-        /* Logo Slide Down & Fade In Animation */
-        @keyframes slideDownFadeIn {
-            0% {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    </style>
 </head>
 <body>
     <table>
@@ -106,7 +97,7 @@
             </td>
         </tr>
         <tr>
-            <td id="splash">
+            <td>
                 <img id="main-image" src="images/splash.png" alt="Main Image">
             </td>
         </tr>
