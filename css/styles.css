@@ -1,0 +1,14 @@
+/* Ensure the background covers the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') repeat;
+    background-size: 256px 256px;
+    animation: scrollBackground 40s linear infinite;
+    font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
+    color: cyan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
