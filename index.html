@@ -5,188 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reference: 7Xq4Lm12FyN9K">
     <meta name="keywords" content="7Xq4Lm12FyN9K">
-    <meta name="robots" content="index, nofollow">
+    <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="7Xq4Lm12FyN9K">
     <title>Reference: 7Xq4Lm12FyN9K</title>
-    <style>
-        /* Import Orbitron Font */
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
-
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('images/background.jpg') repeat;
-            background-size: 256px 256px;
-            animation: scrollBackground 40s linear infinite;
-            font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
-            color: cyan;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        table {
-            width: 80%;
-            height: 80vh;
-            margin: 0;
-            border-collapse: collapse;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        /* Neon Orange Borders */
-        #splash, #text {
-            border: 4px solid #FF4500;
-        }
-
-        /* Logo Styling */
-        #logo {
-            height: auto;
-            background-color: black;
-            animation: slideDownFadeIn 2s ease-out;
-        }
-
-        #logo img {
-            width: 100%;
-            display: block;
-        }
-
-        /* Button Table Row Styling */
-        #buttons {
-            background-color: black;
-            height: 50px; /* Row height */
-        }
-
-        #buttons td {
-            padding: 0;
-        }
-
-        /* Button Styling */
-        .link-button {
-            width: 25%; /* 4 equal columns */
-            height: 50px;
-            background-color: #333333; /* Dark gray */
-            color: white;
-            font-size: 0.8em; /* Smaller text */
-            text-decoration: none; /* Remove underline */
-            display: block;
-            line-height: 50px; /* Center text vertically */
-            border: 2px solid black; /* Black border */
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
-
-/* Button Styling */
-.link-button {
-    display: block; /* Ensure buttons take up entire cell width */
-    width: 100%; /* Full width of the parent cell */
-    height: 50px; /* Uniform button height */
-    background-color: #333333; /* Dark gray background */
-    color: white;
-    font-size: 0.7em; /* Smaller text size */
-    text-decoration: none; /* Remove underline */
-    line-height: 50px; /* Center text vertically */
-    border: 2px solid black; /* Black border */
-    transition: all 0.3s ease; /* Smooth hover effects */
-}
-
-.link-button:hover {
-    background-color: #555555; /* Slightly lighter gray on hover */
-    cursor: pointer;
-}
-        /* Splash Image Styling */
-        #splash {
-            height: auto;
-        }
-
-        #main-image {
-            width: 100%;
-            display: block;
-        }
-
-        /* Bottom Cell Styling */
-        #text {
-            background-color: black;
-            padding: 20px;
-            font-size: 1em;
-        }
-
-        h1 {
-            font-size: 1.5em; /* Smaller "Welcome" text */
-        }
-
-        /* Background Scroll Animation */
-        @keyframes scrollBackground {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 0 -256px;
-            }
-        }
-
-        /* Logo Slide Down & Fade In Animation */
-        @keyframes slideDownFadeIn {
-            0% {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <table>
         <!-- Logo Row -->
         <tr>
-            <td id="logo">
+            <td>
                 <img src="images/logo.jpg" alt="Logo">
             </td>
         </tr>
 
-<!-- Button Row with Equal Width Columns -->
-<tr id="buttons">
-    <td>
-        <table style="width: 100%; height: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="width: 25%; text-align: center;">
-                    <a href="index.html" class="link-button">Home</a>
-                </td>
-                <td style="width: 25%; text-align: center;">
-                    <a href="index.html" class="link-button">Bird</a>
-                </td>
-                <td style="width: 25%; text-align: center;">
-                    <a href="index.html" class="link-button">Computer</a>
-                </td>
-                <td style="width: 25%; text-align: center;">
-                    <a href="index.html" class="link-button">Winning</a>
-                </td>
-            </tr>
-        </table>
-    </td>
-</tr>
-        <!-- Splash Image Row -->
+        <!-- Navigation Buttons Row -->
         <tr>
-            <td id="splash">
-                <img id="main-image" src="images/splash.png" alt="Main Image">
+            <td>
+                <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td><a href="index.html" class="link-button">Home</a></td>
+                        <td><a href="page1.html" class="link-button">Bird</a></td>
+                        <td><a href="page2.html" class="link-button">Computer</a></td>
+                        <td><a href="page3.html" class="link-button">Winning</a></td>
+                    </tr>
+                </table>
             </td>
         </tr>
 
-        <!-- Text Row -->
+        <!-- Splash Image Row -->
         <tr>
-            <td id="text">
-                <h1>Welcome</h1>
-                <p>
-                    Reference ID: <strong>7Xq4Lm12FyN9K</strong><br><br>
-                    Click <a href="https://docs.google.com/document/d/1SggdpPOtm4G6-BuHxZljNeq6tNGeZK6NMwp5taqelR0/edit?usp=drivesdk" target="_blank">here</a>
-                </p>
+            <td>
+                <img src="images/splash.png" alt="Main Image">
+            </td>
+        </tr>
+
+        <!-- Text Row with Nested 2-Row Table -->
+        <tr>
+            <td class="text">
+                <table class="nested-text-table">
+                    <!-- Text Content Row -->
+                    <tr>
+                        <td>
+                            <h1>Welcome</h1>
+                            <p>
+                                Reference ID: <strong>7Xq4Lm12FyN9K</strong><br><br>
+                                Click <a href="https://docs.google.com/document/d/1SggdpPOtm4G6-BuHxZljNeq6tNGeZK6NMwp5taqelR0/edit?usp=drivesdk" target="_blank">here</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Fixed Height Footer Row -->
+                    <tr>
+                        <td class="footer">
+                            <a href="https://github.com/qidraxium" target="_blank">Made with GitHub</a>
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
