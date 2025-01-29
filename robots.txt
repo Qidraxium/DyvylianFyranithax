@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
-Allow: /DyvylianFyranithax/index.html
+Allow: /DyvylianFyranithax/
+Disallow:
 Sitemap: https://qidraxium.github.io/DyvylianFyranithax/sitemap.xml
