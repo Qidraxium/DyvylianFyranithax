@@ -5,64 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reference: 7Xq4Lm12FyN9K">
     <meta name="keywords" content="7Xq4Lm12FyN9K">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, nofollow">
     <meta name="google-site-verification" content="7Xq4Lm12FyN9K">
     <title>Reference: 7Xq4Lm12FyN9K</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <table>
-        <!-- Logo Row -->
-        <tr>
-            <td>
-                <img src="images/logo.jpg" alt="Logo">
-            </td>
-        </tr>
+<body onload="loadContent()">
+    <script>
+        function loadContent() {
+            const params = new URLSearchParams(window.location.search);
+            const page = params.get("page") || "home"; // Default to 'home' if no query
 
-        <!-- Navigation Buttons Row -->
-        <tr>
-            <td>
-                <table style="width: 100%; height: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td><a href="index.html" class="link-button">Home</a></td>
-                        <td><a href="page1.html" class="link-button">Bird</a></td>
-                        <td><a href="page2.html" class="link-button">Computer</a></td>
-                        <td><a href="page3.html" class="link-button">Winning</a></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+            // Update splash image and text dynamically
+            document.getElementById("splash-image").src = `images/splash_${page}.png`;
+            
+            let content = {
+                home: "Welcome to the main page.",
+                bird: "This is the bird page.",
+                computer: "This is the computer page.",
+                winning: "This is the winning page."
+            };
 
-        <!-- Splash Image Row -->
-        <tr>
-            <td>
-                <img src="images/splash.png" alt="Main Image">
-            </td>
-        </tr>
+            document.getElementById("page-text").innerHTML = content[page] || content["home"];
 
-        <!-- Text Row with Nested 2-Row Table -->
-        <tr>
-            <td class="text">
-                <table class="nested-text-table">
-                    <!-- Text Content Row -->
-                    <tr>
-                        <td>
-                            <h1>Welcome</h1>
-                            <p>
-                                Reference ID: <strong>7Xq4Lm12FyN9K</strong><br><br>
-                                Click <a href="https://docs.google.com/document/d/1SggdpPOtm4G6-BuHxZljNeq6tNGeZK6NMwp5taqelR0/edit?usp=drivesdk" target="_blank">here</a>
-                            </p>
-                        </td>
-                    </tr>
-                    <!-- Fixed Height Footer Row -->
-                    <tr>
-                        <td class="footer">
-                            <a href="https://github.com/qidraxium" target="_blank">Made with GitHub</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+            // Play logo animation only if there is NO ?page= in the URL
+            if (!params.has("page")) {
+                document.getElementById("logo").classList.add("animate-logo");
+            } else {
+                document.getElementById("logo").classList.remove("animate-logo");
+            }
+        }
+    </script>
+
+    <div class="container">
+        <table class="main-table">
+            <!-- Logo -->
+            <tr>
+                <td id="logo">
+                    <img src="images/logo.jpg" alt="Logo">
+                </td>
+            </tr>
+
+            <!-- Navigation Links -->
+            <tr>
+                <td>
+                    <table class="nav-table">
+                        <tr>
+                            <td><a class="link-button" href="index.html?page=home">Home</a></td>
+                            <td><a class="link-button" href="index.html?page=bird">Bird</a></td>
+                            <td><a class="link-button" href="index.html?page=computer">Computer</a></td>
+                            <td><a class="link-button" href="index.html?page=winning">Winning</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Splash Image -->
+            <tr>
+                <td>
+                    <img id="splash-image" src="images/splash_home.png" alt="Main Image">
+                </td>
+            </tr>
+
+            <!-- Text Row -->
+            <tr>
+                <td class="text">
+                    <table class="nested-text-table">
+                        <tr>
+                            <td class="text-content">
+                                <h1>Welcome</h1>
+                                <p id="page-text"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer">
+                                <a href="https://github.com/qidraxium" target="_blank">Made with GitHub</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
