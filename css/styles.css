@@ -35,9 +35,18 @@ body {
 }
 
 /* Logo */
-.main-table img {
+#logo img {
     width: 100%;
     display: block;
+}
+
+/* Logo animation (only runs on first visit) */
+@keyframes slideDownFadeIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+.animate-logo {
+    animation: slideDownFadeIn 2s ease-out;
 }
 
 /* Navigation Buttons */
@@ -65,7 +74,7 @@ body {
 }
 
 /* Splash Image */
-#main-image {
+#splash-image {
     width: 100%;
     display: block;
 }
@@ -111,14 +120,4 @@ body {
 
 .footer a:hover {
     color: #FFFF00;
-}
-
-/* Logo Slide Down & Fade In */
-@keyframes slideDownFadeIn {
-    0% { transform: translateY(-50px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
-#logo {
-    animation: slideDownFadeIn 2s ease-out;
 }
