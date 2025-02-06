@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') repeat;
+    background-size: 256px 256px;
+    animation: scrollBackground 40s linear infinite;
+    font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
+    color: cyan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Scroll Animation */
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 -256px; }
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Table */
+.main-table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+/* Logo */
+#logo img {
+    width: 100%;
+    display: block;
+}
+
+/* Logo animation (only runs on first visit) */
+@keyframes slideDownFadeIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+.animate-logo {
+    animation: slideDownFadeIn 2s ease-out;
+}
+
+/* Navigation Buttons */
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table td {
+    width: 25%;
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+.link-button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.link-button:hover {
+    background-color: #444;
+}
+
+/* Splash Image */
+#splash-image {
+    width: 100%;
+    display: block;
+}
+
+/* Text Section */
+.text {
+    background-color: black;
+    border: 4px solid #FF4500; /* Neon orange */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nested Text Table */
+.nested-text-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Text Content */
+.text-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8em;
+    padding: 5px 0;
+    border-top: 2px solid #FF4500;
+    width: 100%;
+}
+
+/* Footer Link */
+.footer a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer a:hover {
+    color: #FFFF00;
+}
