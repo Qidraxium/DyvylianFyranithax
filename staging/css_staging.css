@@ -1,8 +1,0 @@
-@import url("css_base.css"); /* Inherit global styles */
-
-/* Staging-Specific Adjustments */
-#main-content {
-    font-size: 1.2em;
-    color: cyan;
-    padding: 20px;
-}

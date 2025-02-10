@@ -3,13 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="css_staging.css"> <!-- Ensure this is here -->
-    <script defer src="js_base.js"></script>
-    <script defer src="js_staging.js"></script>
+    <meta name="description" content="Reference: 7Xq4Lm12FyN9K">
+    <meta name="keywords" content="7Xq4Lm12FyN9K">
+    <meta name="robots" content="index, nofollow">
+    <meta name="google-site-verification" content="7Xq4Lm12FyN9K">
+    <title>Reference: 7Xq4Lm12FyN9K</title>
+    <link rel="stylesheet" href="css_base.css">
 </head>
-<body>
-    <div id="container"></div> 
-<div id="main-content">Test Content</div>
+<body onload="loadContent()">
+    <script>
+        function loadContent() {
+            const params = new URLSearchParams(window.location.search);
+            const page = params.get("page") || "home"; // Default to 'home' if no query
+            
+            // Update splash image and text dynamically
+            document.getElementById("splash-image").src = `image_splash_${page}.webp`;
+            
+            let content = {
+                home: "You are not home.",
+                bird: "The skies are not yours.",
+                computer: "The network is not safe.",
+                team: "It is possible, but not likely."
+            };
+            
+            document.getElementById("page-text").innerHTML = content[page] || content["home"];
+            
+            // Play logo animation only if there is NO ?page= in the URL
+            if (!params.has("page")) {
+                document.getElementById("logo").classList.add("animate-logo");
+            } else {
+                document.getElementById("logo").classList.remove("animate-logo");
+            }
+        }
+    </script>
+    
+    <div class="container">
+        <table class="main-table">
+            <!-- Logo -->
+            <tr>
+                <td id="logo">
+                    <img src="image_logo.jpg" alt="Logo">
+                </td>
+            </tr>
+            
+            <!-- Navigation Links -->
+            <tr>
+                <td>
+                    <table class="nav-table">
+                        <tr>
+                            <td><a class="link-button" href="index.html?page=home">Home</a></td>
+                            <td><a class="link-button" href="index.html?page=bird">Bird</a></td>
+                            <td><a class="link-button" href="index.html?page=computer">Computer</a></td>
+                            <td><a class="link-button" href="index.html?page=team">Team</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- Splash Image -->
+            <tr>
+                <td>
+                    <img id="splash-image" src="images/splash_home.webp" alt="Main Image">
+                </td>
+            </tr>
+            
+            <!-- Text Row -->
+            <tr>
+                <td class="text">
+                    <table class="nested-text-table">
+                        <tr>
+                            <td class="text-content">
+                                <h1>Welcome</h1>
+                                <p id="page-text"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer">
+                <p>
+                    Reference ID: <strong>7Xq4Lm12FyN9K</strong><br><br>
+                    Click <a href="https://docs.google.com/document/d/1SggdpPOtm4G6-BuHxZljNeq6tNGeZK6NMwp5taqelR0/edit?usp=drivesdk" target="_blank">here</a>
+                </p>
+                                
+                                <a href="https://github.com/qidraxium" target="_blank">Made with GitHub</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
