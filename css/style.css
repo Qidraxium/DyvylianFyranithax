@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('image_background.jpg') repeat;
+    background: url('../images/background.jpg') repeat;
     background-size: 256px 256px;
     animation: scrollBackground 40s linear infinite;
     font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;

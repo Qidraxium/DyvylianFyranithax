@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("js_staging.js loaded!");
-
     function loadNavLinks() {
         document.getElementById("links").innerHTML = `
             <table class="nav-table">
