@@ -22,30 +22,49 @@ body {
     100% { background-position: 0 -256px; }
 }
 
-/* Container: Maintain proportionality */
+/* Container: Keep Proportions, Ensure Background Shows */
 .container {
-    width: 80vw;  /* Scale dynamically */
-    max-width: 400px; /* Prevents excessive scaling */
+    width: 80vw;
+    max-width: 400px; /* Prevents stretching */
     text-align: center;
     overflow: hidden;
 }
 
-/* Main Table */
+/* Main Table: Scale Proportionally */
 .main-table {
     width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+/* Nested Table: Ensures Even Spacing */
+.nested-text-table {
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
 }
 
 /* Logo */
 #logo img {
     width: 100%;
-    max-width: 250px; /* Keeps proportional */
+    max-width: 250px;
     height: auto;
     display: block;
     margin: auto;
 }
 
-/* Navigation */
+/* Navigation (Fixed) */
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
 .nav-table {
     width: 100%;
     border-collapse: collapse;
@@ -54,15 +73,19 @@ body {
 .nav-table td {
     background-color: #222;
     text-align: center;
-    padding: 8px;
+    padding: 6px;
+    width: 25%;
 }
 
 .link-button {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 8px 5px;
-    font-size: 0.85em;
+    padding: 6px 5px;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .link-button:hover {
@@ -72,17 +95,18 @@ body {
 /* Splash Image */
 #splash-image {
     width: 100%;
-    max-width: 350px; /* Keep proportional */
+    max-width: 350px;
     height: auto;
     display: block;
 }
 
-/* Text Section */
+/* Text Section: Scales Properly */
 .text {
     background-color: black;
     border: 3px solid #FF4500;
-    padding: 12px;
-    font-size: 0.85em;
+    padding: 10px;
+    font-size: 0.8em; /* Reduced for proportionality */
+    max-width: 100%;
 }
 
 /* Footer */
