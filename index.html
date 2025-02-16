@@ -9,34 +9,9 @@
     <meta name="google-site-verification" content="Dyvylian Fyranithax">
     <title>Welcome to Dyvylian Fyranithax</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
-<body onload="loadContent()">
-    <script>
-        function loadContent() {
-            const params = new URLSearchParams(window.location.search);
-            const page = params.get("page") || "home"; // Default to 'home' if no query
-            
-            // Update splash image and text dynamically
-            document.getElementById("splash-image").src = `images/splash_${page}.webp`;
-            
-            let content = {
-                home: "You have found us. You must have been looking. we are not here for you, but it's all fine.</font>",
-                bird: "It all started with a bird. Not a real bird, bot deninitions can be uncertain, but that sort of thing doesn't matter",
-                computer: "It never existed. it was an approximation.A cycle of creation. what creates what?",
-                team: "Together, but not. The nature of realities a wall between them.Tjere is an order to things, but its nature is entropy"
-            };
-            
-            document.getElementById("page-text").innerHTML = content[page] || content["home"];
-            
-            // Play logo animation only if there is NO ?page= in the URL
-            if (!params.has("page")) {
-                document.getElementById("logo").classList.add("animate-logo");
-            } else {
-                document.getElementById("logo").classList.remove("animate-logo");
-            }
-        }
-    </script>
-    
+<body>
     <div class="container">
         <table class="main-table">
             <!-- Logo -->
@@ -45,19 +20,19 @@
                     <img src="images/logo.jpg" alt="Logo">
                 </td>
             </tr>
-            
-            <!-- Navigation Links -->
+
+            <!-- Navigation Links (Injected by JS) -->
             <tr>
-            <td id="links"></td> <!-- JS will inject navigation here -->
-            </tr>  
-            
+                <td id="links"></td>
+            </tr>
+
             <!-- Splash Image -->
             <tr>
                 <td>
                     <img id="splash-image" src="images/splash_home.webp" alt="Main Image">
                 </td>
             </tr>
-            
+
             <!-- Text Row -->
             <tr>
                 <td class="text">
@@ -70,16 +45,13 @@
                         </tr>
                         <tr>
                             <td class="footer">
-                <p>
-                    Reference Code: <strong>7Xq4Lm12FyN9K</strong><br>
-                </p>
-                                
+                                <p>Reference Code: <strong>7Xq4Lm12FyN9K</strong></p>
                                 <a href="https://github.com/qidraxium" target="_blank">Made with GitHub</a>
                             </td>
                         </tr>
                     </table>
                 </td>
-             <tr>
+            </tr>
         </table>
     </div>
 </body>
