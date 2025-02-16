@@ -107,11 +107,12 @@ body {
     padding: 10px;
     font-size: 0.8em; /* Reduced for proportionality */
     max-width: 100%;
+    height:;
 }
 
 /* Footer */
 .footer {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 5px 0;
     border-top: 2px solid #FF4500;
     text-align: center;

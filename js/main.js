@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("splash-image").src = `images/splash_${page}.webp`;
 
         let content = {
-            home: "You have found us. You must have been looking. We are not here for you, but it's all fine.",
+            home: "You have found us. You must have been looking. We are not here for you, but things aren't always how we expext.",
             bird: "It all started with a bird. Not a real bird, but definitions can be uncertain. That sort of thing doesn't matter.",
             computer: "It never existed. It was an approximation. A cycle of creation. What creates what?",
             team: "Together, but not. The nature of reality is a wall between them. There is an order to things, but its nature is entropy."
