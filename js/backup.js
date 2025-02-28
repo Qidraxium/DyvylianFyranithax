@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <tr>
                     <td><a class="link-button" href="lndex.html">HOME</a></td>
                     <td><a class="link-button" href="index.html?page=bird">BIRD</a></td>
-                    <td><a class="link-button" href="index.html?page=computer">COMPUTER</a></td>
+                    <td><a class="link-button" href="staging/index.html">COMPUTER</a></td>
                     <td><a class="link-button" href="index.html?page=team">TEAM</a></td>
                 </tr>
             </table>
