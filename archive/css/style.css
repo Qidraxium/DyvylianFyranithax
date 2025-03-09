@@ -1,0 +1,92 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('/archive/images/background.jpg');
+    background-repeat: repeat;
+    background-size: 256px 256px;
+    font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
+    color: #00ff77;
+    min-height: 100vh;
+    overflow: hidden; /* Prevents any scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none; /* Prevents text selection */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none; /* Disables right-click and interactions */
+}
+
+/* Main Table */
+.main-table {
+    width: 70%;
+    height: 80vh;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 3px solid #ff0077;
+    background-color: black;
+    table-layout: fixed;
+}
+
+/* Table Cells */
+.main-table td {
+    border: 1px solid #ff0077;
+    padding: 10px;
+    background-color: black;
+    color: cyan;
+    vertical-align: middle;
+}
+
+/* Image Styling */
+.node-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ensures a square image */
+    display: block;
+    margin: auto;
+}
+
+/* Tag Section */
+.tag-section {
+    padding: 10px;
+    border-left: 5px solid #FF4500;
+    color: #FF4500;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.8em;
+    padding: 10px 0;
+    border-top: 2px solid #FF4500;
+    text-align: center;
+}
+
+.footer a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFFF00;
+}
+
+/* Garble Text */
+.garble-text {
+    font-size: 0;
+    color: #007777;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 0; /* Fixes height to 0 */
+    overflow: hidden;
+    opacity: 0.7;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+}
