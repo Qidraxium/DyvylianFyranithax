@@ -89,7 +89,7 @@ body {
 }
 
 /* Tag Section (Green Monitor Style) */
-.tag-section {
+.tags {
     padding: 10px;
     border: 2px solid var(--dark-cyan);
     background-color: var(--dark-green);
@@ -100,15 +100,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px var(--bright-green);
     font-family: 'Lucida Console', Monaco, monospace;
-    color: var(--bright-green);
-}
-
-/* Monitor Frame */
-.monitor-frame {
-    border: 2px solid var(--bright-green);
-    padding: 10px;
-    background-color: var(--dark-green);
-    border-radius: 3px;
 }
 
 /* Tag Colors */
