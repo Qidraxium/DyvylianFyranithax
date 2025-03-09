@@ -1,44 +1,122 @@
+/* Color Variables */
+:root {
+    --cyan: #00ffff;
+    --hot-pink: #ff0077;
+    --orange: #FF4500;
+    --green: #00ff77;
+    --dark-cyan: #007777;
+    --dark-pink: #770044;
+    --background-black: #000000;
+    --border-color: var(--hot-pink);
+}
+
 /* General Page Styling */
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--background-black);
     background-image: url('/archive/images/background.jpg');
     background-repeat: repeat;
     background-size: 256px 256px;
     font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
-    color: #00ff77;
+    color: var(--cyan);
     min-height: 100vh;
-    overflow: hidden; /* Prevents any scrolling */
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-user-select: none; /* Prevents text selection */
-    -moz-user-select: none;
-    -ms-user-select: none;
+    -webkit-user-select: none;
     user-select: none;
-    pointer-events: none; /* Disables right-click and interactions */
+    pointer-events: none;
+    background-attachment: scroll;
+}
+
+/* Title Container */
+.title-container {
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid var(--hot-pink);
+    background-color: var(--background-black);
+}
+
+.floating-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--cyan);
+    margin: 0;
+    text-align: center;
 }
 
 /* Main Table */
 .main-table {
     width: 70%;
-    height: 80vh;
+    height: 75vh;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 10px auto;
     border-collapse: collapse;
-    border: 3px solid #ff0077;
-    background-color: black;
+    border: 3px solid var(--border-color);
+    background-color: var(--background-black);
     table-layout: fixed;
 }
 
 /* Table Cells */
 .main-table td {
-    border: 1px solid #ff0077;
-    padding: 10px;
-    background-color: black;
-    color: cyan;
+    border: 1px solid var(--dark-pink);
+    padding: 5px;
+    background-color: var(--background-black);
+    color: var(--cyan);
     vertical-align: middle;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+/* Tag Section (Single Cell) */
+.tag-section {
+    padding: 5px;
+    border-left: 5px solid var(--orange);
+    color: var(--dark-cyan);
+    margin-bottom: 5px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Tag Styles */
+.primary-tags {
+    color: var(--hot-pink);
+}
+
+.secondary-tags {
+    color: var(--dark-cyan);
+}
+
+.related-tags {
+    color: var(--green);
+}
+
+/* Footer */
+.footer {
+    font-size: 0.7em;
+    padding: 2px 0;
+    border-top: 1px solid var(--orange);
+    text-align: center;
+    white-space: normal;
+    line-height: 1.1;
+}
+
+.footer a {
+    color: var(--dark-cyan);
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+.footer a:hover {
+    color: var(--green);
 }
 
 /* Image Styling */
@@ -46,45 +124,19 @@ body {
     width: 100%;
     max-width: 350px;
     height: auto;
-    aspect-ratio: 1 / 1; /* Ensures a square image */
+    aspect-ratio: 1 / 1;
     display: block;
     margin: auto;
-}
-
-/* Tag Section */
-.tag-section {
-    padding: 10px;
-    border-left: 5px solid #FF4500;
-    color: #FF4500;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-.footer {
-    font-size: 0.8em;
-    padding: 10px 0;
-    border-top: 2px solid #FF4500;
-    text-align: center;
-}
-
-.footer a {
-    color: cyan;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #FFFF00;
 }
 
 /* Garble Text */
 .garble-text {
     font-size: 0;
-    color: #007777;
+    color: var(--dark-cyan);
     position: absolute;
     bottom: 10px;
     left: 10px;
-    height: 0; /* Fixes height to 0 */
+    height: 0;
     overflow: hidden;
     opacity: 0.7;
     overflow-wrap: break-word;
