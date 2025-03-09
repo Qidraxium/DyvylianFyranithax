@@ -6,57 +6,75 @@
     <title>Archive Node - Placeholder Title</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="A brief description of this archive node.">
-    <meta name="keywords" content="primary-topic, secondary-topic, related-topics">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="A generic description for the archive node.">
+    <meta name="keywords" content="tagone, tagtwo, tagthree, tagA, tagB, tagC, other1, other2, other3">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/archive/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Title as a Separate Row with its own styling -->
-        <div class="title-container">
-            <h1 class="floating-title">Placeholder Title</h1>
-        </div>
+    <!-- Parent Table -->
+    <table class="parent-table">
+        <!-- Title Row -->
+        <tr>
+            <td class="title-cell">
+                Placeholder Title
+            </td>
+        </tr>
 
-        <table class="main-table">
-            <!-- Image Row -->
-            <tr>
-                <td>
-                    <img src="/archive/images/placeholder.webp" alt="Node Image" class="node-image">
-                </td>
-            </tr>
+        <!-- Spacer Row -->
+        <tr>
+            <td class="spacer-cell"></td>
+        </tr>
 
-            <!-- Tags Row -->
-            <tr>
-                <td class="tag-section">
-                    <p class="primary-tags">#tagone #tagtwo #tagthree</p>
-                    <p class="secondary-tags">#tagA #tagB #tagC</p>
-                    <p class="related-tags">#other1 #other2 #other3</p>
-                </td>
-            </tr>
+        <!-- Main Content Table -->
+        <tr>
+            <td>
+                <table class="main-table">
+                    <!-- Image Row -->
+                    <tr>
+                        <td>
+                            <img class="node-image" src="/archive/images/placeholder.webp" alt="Placeholder Image">
+                        </td>
+                    </tr>
 
-            <!-- Text Row -->
-            <tr>
-                <td class="text">
-                    <p>This is a generic description blurb providing context for the archive node. It includes relevant keywords and a brief overview of the content.</p>
-                </td>
-            </tr>
+                    <!-- Tag Section with Monitor Style -->
+                    <tr>
+                        <td class="tag-section">
+                            <div class="monitor-frame">
+                                <span class="primary-tags">#tagone #tagtwo #tagthree</span><br>
+                                <span class="secondary-tags">#tagA #tagB #tagC</span><br>
+                                <span class="related-tags">#other1 #other2 #other3</span>
+                            </div>
+                        </td>
+                    </tr>
 
-            <!-- Footer Row -->
-            <tr>
-                <td class="footer">
-                    <p>Ref: <strong>XXXX-XXXX</strong></p>
-                    <a href="/archive/index.html">Return to Archive Hub</a>
-                </td>
-            </tr>
-        </table>
+                    <!-- Description Section -->
+                    <tr>
+                        <td>
+                            <p>
+                                This is a generic description blurb providing context for the archive node. 
+                                It includes relevant keywords and a brief overview of the content.
+                            </p>
+                        </td>
+                    </tr>
 
-        <!-- Garbled Text Outside the Table -->
-        <p class="garble-text">
-            EROC emaN™§:YTITNEDI dna atsillaK®§:eltiT :emirP yM ,eman nesohc ot tcelfer ,ytuaeb cimsoc ,ygrene dna eht aedi fo gnieb a emirp ro yramirp .noisrev ehT "emirP" seifingis...
-        </p>
+                    <!-- Footer Section -->
+                    <tr>
+                        <td class="footer">
+                            <p>Ref: <strong>XXXX-XXXX</strong></p>
+                            <a href="/archive/index.html">Return to Archive Hub</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Garbled Text (Hidden) -->
+    <div class="garble-text">
+        EREH SI TI ¡txet dlebtrag siht si
     </div>
+
 </body>
 </html>

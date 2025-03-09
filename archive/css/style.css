@@ -8,6 +8,8 @@
     --dark-pink: #770044;
     --background-black: #000000;
     --border-color: var(--hot-pink);
+    --dark-green: #003300; /* Dark green for vintage monitor look */
+    --bright-green: #00ff00; /* Bright green text */
 }
 
 /* General Page Styling */
@@ -31,31 +33,41 @@ body {
     background-attachment: scroll;
 }
 
-/* Title Container */
-.title-container {
-    position: relative;
+/* Parent Table */
+.parent-table {
     width: 70%;
     max-width: 800px;
-    margin: 10px auto;
-    padding: 10px;
-    border: 2px solid var(--hot-pink);
-    background-color: var(--background-black);
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: none;
+    table-layout: fixed;
+    height: 80vh;
 }
 
-.floating-title {
-    font-size: 1.8em;
+/* Title Cell */
+.title-cell {
+    font-size: clamp(1.5em, 4vw, 2.5em);
     font-weight: bold;
     color: var(--cyan);
-    margin: 0;
+    background-color: var(--background-black);
+    padding: 5px;
+    border: 2px solid var(--hot-pink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
+}
+
+/* Spacer Cell */
+.spacer-cell {
+    height: 10px;
+    background-color: transparent;
 }
 
 /* Main Table */
 .main-table {
-    width: 70%;
-    height: 75vh;
-    max-width: 800px;
-    margin: 10px auto;
+    width: 100%;
+    height: 100%;
     border-collapse: collapse;
     border: 3px solid var(--border-color);
     background-color: var(--background-black);
@@ -72,41 +84,46 @@ body {
     overflow: hidden;
     white-space: normal;
     text-align: center;
-    font-size: calc(1vw + 1vh + 0.5vmin);
-}
-
-/* Tag Section (Single Cell) */
-.tag-section {
-    padding: 5px;
-    border-left: 5px solid var(--orange);
-    color: var(--dark-cyan);
-    margin-bottom: 5px;
-    white-space: normal;
-    text-align: center;
+    font-size: calc(0.8vw + 0.8vh + 0.5vmin);
     line-height: 1.1;
 }
 
-/* Tag Styles */
-.primary-tags {
-    color: var(--hot-pink);
+/* Tag Section (Green Monitor Style) */
+.tag-section {
+    padding: 10px;
+    border: 2px solid var(--dark-cyan);
+    background-color: var(--dark-green);
+    margin: 5px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--bright-green);
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: var(--bright-green);
 }
 
-.secondary-tags {
-    color: var(--dark-cyan);
+/* Monitor Frame */
+.monitor-frame {
+    border: 2px solid var(--bright-green);
+    padding: 10px;
+    background-color: var(--dark-green);
+    border-radius: 3px;
 }
 
-.related-tags {
-    color: var(--green);
+/* Tag Colors */
+.primary-tags, .secondary-tags, .related-tags {
+    color: var(--bright-green);
 }
 
 /* Footer */
 .footer {
-    font-size: 0.7em;
+    font-size: 0.6em;
     padding: 2px 0;
     border-top: 1px solid var(--orange);
     text-align: center;
     white-space: normal;
-    line-height: 1.1;
+    line-height: 1.0;
 }
 
 .footer a {
