@@ -18,12 +18,13 @@
     --debug-orange: #ffa500;
     --debug-teal: #008080;
     --debug-pink: #ff0077;
+    --bright-teal: #009999; /* Brighter teal for tags */
 }
 
 /* General Page Styling */
 body {
     margin: 0;
-    padding: 3px;
+    padding: 0;
     background-color: var(--background-black);
     background-image: url('/archive/images/background.jpg');
     background-repeat: repeat;
@@ -39,7 +40,6 @@ body {
     user-select: none;
     pointer-events: none;
     background-attachment: scroll;
-    border: 2px solid var(--debug-red);
 }
 
 /* Parent Table */
@@ -48,24 +48,29 @@ body {
     max-width: 800px;
     margin: 20px auto;
     border-collapse: collapse;
-    border: 2px solid var(--debug-blue);
     table-layout: fixed;
     height: 80vh;
-    padding: 3px;
 }
 
 /* Title Cell */
 .section-title {
-    font-size: clamp(1.5em, 4vw, 2.5em);
+    font-size: clamp(1.5em, 4vw, 2.3em); /* Slightly adjusted font size */
     font-weight: bold;
     color: var(--cyan);
     background-color: var(--background-black);
     padding: 3px;
-    border: 2px solid var(--hot-pink);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    border: 4px solid var(--hot-pink); /* Hot-pink outline on title only */
+    width: calc(100% - 6px); /* Adjusted to remove excess width */
+    box-sizing: border-box;
+}
+
+/* Spacer Row */
+.spacer-cell {
+    height: 20px; /* Creates a gap between sections */
 }
 
 /* Main Table */
@@ -73,15 +78,13 @@ body {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
-    border: 2px solid var(--debug-purple);
     background-color: var(--background-black);
     table-layout: fixed;
-    padding: 3px;
+    border: 4px solid var(--hot-pink); /* Thicker outline around the main table */
 }
 
 /* Table Cells */
 .main-table td {
-    border: 2px solid var(--debug-orange);
     padding: 3px;
     margin: 0;
     background-color: var(--background-black);
@@ -89,17 +92,16 @@ body {
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
+    border: 2px solid var(--dark-pink); /* Dark pink outline for bottom table cells */
 }
 
 /* Image Section */
 .section-image {
     width: 100%;
     height: 0;
-    padding-bottom: 100%; /* This maintains 1:1 aspect ratio */
+    padding-bottom: 100%; /* Maintains 1:1 aspect ratio */
     position: relative;
-    box-sizing: border-box;
     overflow: hidden;
-    border: 2px solid var(--debug-green);
 }
 
 /* Image Styling */
@@ -113,17 +115,20 @@ body {
 /* Tag Section */
 .section-tags {
     height: 60px;
-    padding: 3px;
-    border: 2px solid var(--debug-pink);
-    vertical-align: top;
+    padding: 0; /* Removed padding */
     overflow-y: hidden;
+}
+
+/* Tags Styling */
+.primary-tags, .secondary-tags, .related-tags {
+    font-size: 0.9em; /* Smaller tags */
+    color: var(--bright-teal); /* Brighter teal for better visibility */
 }
 
 /* Description Section */
 .section-description {
     flex-grow: 1;
     padding: 3px;
-    border: 2px solid var(--debug-purple);
     vertical-align: top;
     overflow-y: auto;
 }
@@ -131,9 +136,18 @@ body {
 /* Footer */
 .section-footer {
     height: 40px;
-    padding: 3px;
-    border: 2px solid var(--debug-pink);
-    font-size: 0.6em;
+    padding: 0; /* Removed padding */
+    font-size: 0.8em; /* Smaller footer text size */
+    color: var(--bright-teal); /* Brighter teal to match tags */
+}
+
+.section-footer a {
+    color: var(--bright-teal); /* Ensure link color matches */
+    text-decoration: none; /* Remove underline */
+}
+
+.section-footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Garbled Text */
