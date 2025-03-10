@@ -10,14 +10,6 @@
     --border-color: var(--hot-pink);
     --dark-green: #003300;
     --bright-green: #00ff00;
-    --debug-red: #ff0000;
-    --debug-blue: #0000ff;
-    --debug-green: #00ff00;
-    --debug-yellow: #ffff00;
-    --debug-purple: #ff00ff;
-    --debug-orange: #ffa500;
-    --debug-teal: #008080;
-    --debug-pink: #ff0077;
     --bright-teal: #009999; /* Brighter teal for tags */
 }
 
