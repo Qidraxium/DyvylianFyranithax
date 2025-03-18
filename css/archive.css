@@ -136,6 +136,8 @@ body {
     text-align: center;
     white-space: normal;
     line-height: 1.0;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
 
 /* Image Cell Content */
