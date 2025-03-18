@@ -32,10 +32,10 @@ body {
 .parent-table {
     width: 70%;
     max-width: 800px;
-    padding=0px;
+    padding: 0px;
     margin: 0px;
     border-collapse: collapse;
-    border: 0px solid var(--blue);
+    border: 0px solid var(--dark-pink);
     table-layout: fixed;
     align-items: center;
     height: 90vh;
