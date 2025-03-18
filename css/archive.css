@@ -21,11 +21,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: black; /* Fallback if image doesn't load */
-    background-image: url('/images/background.jpg');
-    background-repeat: repeat;
-    background-size: 256px 256px;
-    animation: scrollBackground 40s linear infinite;
+    background: black;
     font-family: 'Orbitron', 'Lucida Console', Monaco, monospace;
     color: var(--dark-cyan);
     min-height: 100vh;
@@ -36,12 +32,6 @@ body {
     -webkit-user-select: none;
     user-select: none;
     pointer-events: none;
-}
-/* Background Scroll Animation */
-@keyframes scrollBackground {
-    0% { background-position: 0 0; }
-    100% { background-position: 0 -256px; }
-}
 
 /* Parent Table */
 .parent-table {
@@ -193,7 +183,6 @@ body {
     color: var(--bright-green);
     width: 100%;
     height: :auto;
-    aspect-ratio: 1 / 1;
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -207,12 +196,11 @@ body {
     pbox-shad4px;
     border: 0px solid var(--bright-green);
     background-color: var(--dark-green);
-    padding: 10px;
-    margin: 20px;
-    width: auto;
+    padding: 5px;
+    margin: 5%;
+    width: 85%;
     height: :auto;
-    aspect-ratio: 1 / 1;
-    color: var()bright-green);
+    color: var(bright-green);
     white-space: normal;
     text-align: center;
     line-height: 1.5;
@@ -256,16 +244,30 @@ body {
 .footer-content a:hover {
     color: var(--hot-pink);
 }
-/* Garble Text */
-.garble-text {
-    font-size: 0;
-    color: var(--dark-cyan);
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0.7;
-    overflow-wrap: break-word;
-    line-height: 1.2;
+.bottom-spacer-cell {
+
+    height: 1000px;
+
+    background-color: transparent;
+}
+.data-cell {
+    font-size: 0.6em;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle
+    white-space: normal;
+    border: 0px solid var(--hot-pink);
+    line-height: 2.0;
+}
+.data-content {
+    border: 0px solid var(--hot-pink);
+    background-color: transparent;
+    color: var(--dark-green);
+    margin: 0px;
+    width: 100%
+    white-space: normal;
+    text-align: center;
+    line-height: 1.5;
 }
