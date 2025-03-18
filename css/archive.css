@@ -212,6 +212,34 @@ body {
     aspect-ratio: 1 / 1;
     padding: 0px;
 }
+.description-link-content {
+  pbox-shad4px;
+  font-size: 1.25em;
+  border: 0px solid var(--bright-green);
+  background-color: var(--dark-green);
+  padding: 5px;
+  margin: 5%;
+  width: 85%;
+  height: :auto;
+  aspect-ratio: 1 / 1;
+  color: var(--bright-green);
+  white-space: normal;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--bright-green);
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-weight: 'bol';
+}
+.description-link-content a {
+    color: var(--bright-green);
+    font-size: 1em;
+    text-decoration: none;
+    pointer-events: auto;
+    height: :auto;
+    aspect-ratio: 1 / 1;
+    padding: 0px;
+}
 /* Footer */
 .footer-cell {
     font-size: 0.6em;
