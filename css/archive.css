@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     background: black; /* Fallback if image doesn't load */
-    background-image: url('/images/background.jpg');
+    background-image: url('images/background.jpg');
     background-repeat: repeat;
     background-size: 256px 256px;
     animation: scrollBackground 40s linear infinite;
