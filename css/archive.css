@@ -1,21 +1,16 @@
 /* Color Variables */
 :root {
     --cyan: #00ffff;
-    --hot-pink: #ff0077;
-    --orange: #FF4500;
-    --green: #00ff77;
     --dark-cyan: #007777;
+    --hot-pink: #ff0077;
     --dark-pink: #770044;
     --darker-pink: #330022;
     --background-black: #000000;
     --border-color: var(--hot-pink);
-    --dark-green: #003300;
-    --bright-green: #00ff00;
-    --blue: #0000ff;
-    --purple: #330055;
-    --teal: #00aaaa:
+    --bright-green: #00ff88;
+    --green: #008866;
+    --dark-green: #003318;
 }
-
 
 /* General Page Styling */
 body {
@@ -68,8 +63,9 @@ body {
 .title-cell {
     margin: 0px;
     padding: 5px;
-    border: 0px solid var(--dark-cyan);
+    border: 2px solid var(--dark-cyan);
     background-color: var(--background-black);
+    color: var(--cyan);
     white-space: normal;
     text-align: center;
     line-height: 1.5;
@@ -167,7 +163,6 @@ body {
 }
 /* Tag Section (Green Monitor Style) */
 .tags-content {
-    pbox-shad4px;
     border: 0px solid var(--hot-pink);
     background-color: var(--darker-pink);
     color: var(--hot-pink);
@@ -200,7 +195,7 @@ body {
     margin: 5%;
     width: 85%;
     height: :auto;
-    color: var(bright-green);
+    color: var(--bright-green);
     white-space: normal;
     text-align: center;
     line-height: 1.5;
@@ -262,12 +257,13 @@ body {
     line-height: 2.0;
 }
 .data-content {
-    border: 0px solid var(--hot-pink);
+    border: 2px solid var(--dark-green);
+    border-radius: 10px;
     background-color: transparent;
-    color: var(--dark-green);
-    margin: 0px;
+    color: var(--green);
+    margin: 1px;
     width: 100%
     white-space: normal;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1;
 }
