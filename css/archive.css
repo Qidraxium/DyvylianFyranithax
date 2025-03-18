@@ -151,7 +151,6 @@ body {
 .tags-cell {
     font-size: 0.6em;
     padding: 2px 0;
-    border-top: px solid var(--orange);
     text-align: center;
     white-space: normal;
     line-height: 1.25;
