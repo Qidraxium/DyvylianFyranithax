@@ -30,7 +30,7 @@ body {
 
 /* Parent Table */
 .parent-table {
-    width: 70%;
+    width: 66%;
     max-width: 800px;
     padding: 0px;
     margin: 0px;
@@ -69,15 +69,13 @@ body {
     white-space: normal;
     text-align: center;
     line-height: 1.5;
-    font-size: 0.6em;
     text-align: center;
     white-space: normal;
     line-height: 1.0;
 }
-
 /* Title Cell Content */
 .title-content {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 0px;
     font-family: 'Lucida Console', Monaco, monospace;
 }
