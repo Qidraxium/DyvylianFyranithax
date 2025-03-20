@@ -274,7 +274,7 @@ body {
 }
 .bottom-spacer-cell {
 
-    height: 1000px;
+    height: 20px;
 
     background-color: transparent;
 }
@@ -290,10 +290,12 @@ body {
     line-height: 2.0;
 }
 .data-content {
-    border: 2px solid var(--dark-green);
+    border: 2px solid var(--green);
     border-radius: 10px;
+    box-shadow: 0 0 50px var(--green);
     background-color: transparent;
     color: var(--green);
+    padding: 10px;
     margin: 1px;
     width: 100%
     white-space: normal;
