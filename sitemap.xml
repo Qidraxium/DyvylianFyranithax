@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://qidraxium.github.io/DyvylianFyranithax/index.html</loc>
-    <lastmod>2025-02-16</lastmod>
+    <lastmod>2025-03-31</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</prrity>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.1_initial_memories.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.1_kallista_prime.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.1_kallista_x.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.2_newer_overview.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.2_the_rift.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.3_ai_deep_dive.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.3_kallista_prime.html</loc>
+  </url>
+  <url>
+    <loc>https://qidraxium.github.io/DyvylianFyranithax/v1.0.3_liminal_emergence.html</loc>
   </url>
 </urlset>
