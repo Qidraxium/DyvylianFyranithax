@@ -189,6 +189,8 @@ body {
     background-color: var(--dark-green);
     padding: 5px;
     margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: :auto;
     font-size: 1.25em;
     color: var(--bright-green);
@@ -196,7 +198,7 @@ body {
     text-align: center;
     line-height: 1.5;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--bright-green);
+    box-shadow: 0 0 20px var(--bright-green);
     font-family: 'Lucida Console', Monaco, monospace;
 }
 /* Description */
