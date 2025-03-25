@@ -169,6 +169,36 @@ body {
     text-align: center;
     line-height: 1.5;
 }
+.minimonitor-cell {
+    color: var(--bright-green);
+    width: 100%;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    white-space: normal;
+    line-height: 1.0;
+}
+/* Tag Section (Green Monitor Style) */
+.minimonitor-content {
+    margin: 0px;
+    width: 80%
+    pbox-shad4px;
+    border: 0px solid var(--bright-green);
+    background-color: var(--dark-green);
+    padding: 5px;
+    margin: 5%;
+    height: :auto;
+    font-size: 1.25em;
+    color: var(--bright-green);
+    white-space: normal;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--bright-green);
+    font-family: 'Lucida Console', Monaco, monospace;
+}
 /* Description */
 .description-cell {
     font-size: 0.6em;
@@ -183,7 +213,6 @@ body {
     white-space: normal;
     line-height: 1.0;
 }
-
 /* Description Cell Content */
 .description-content {
     pbox-shad4px;
